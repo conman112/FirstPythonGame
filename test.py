@@ -6,7 +6,7 @@ pygame.init()
 # the above lines are pretty much always necessary in every
 # python game. otherwise errors occur
 
-DISPLAYSURF = pygame.display.set_mode ((400, 300))
+DISPLAYSURF = pygame.display.set_mode ((400, 300)) #also known as the display surface
 
 # pygame.display.set_mode() MUST have (x,y) inside of it
 # this tells the program how big to draw the game window
@@ -34,4 +34,26 @@ while True: # main game loop
 		if event.type == QUIT:
 				pygame.quit()
 				sys.exit()
+
+	import pygame	
+	spamRect = pygame.Rect(10,20, 200, 300)
+	spamRect == (10, 20, 200, 300)
+
 	pygame.display.update
+
+#	import whammy
+#		import the module known as "whammy"
+#	fizzy()
+#		this is calling the function "fizzy" -the program will look for the function
+#		called "fizzy" and execute it
+#	egg = Wombat()
+#		this is calling the Constructor Function "Wombat". It's a safe guess that "Wombat"
+#		is a ctor because it has a capital first letter. ctor "Wombat" is stored in the "egg" 
+#		variable
+#	egg.bluhbluh()
+#		use method "bluhbluh" to change or affect variable 'egg"'
+#	whammy.spam()
+#		Not a method call, but a function call. "whammy" was the module imported earlier
+#		this line looks through the "whammy" module for the "spam" function
+
+# anotherSurface = DISPLAYSURF.convert_alpha() <-- must be used to draw with transparent colors
